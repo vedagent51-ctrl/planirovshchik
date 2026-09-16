@@ -1,0 +1,16 @@
+{
+  "name": "habit-tracker",
+  "version": "1.0.0",
+  "description": "Простой трекер привычек",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-packager . \"Habit Tracker\" --platform=win32 --arch=x64 --out=dist --overwrite --asar --ignore=\"^/dist\""
+  },
+  "author": "vedagent51",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^32.0.0",
+    "electron-packager": "^17.1.2"
+  }
+}

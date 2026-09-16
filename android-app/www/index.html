@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Трекер привычек</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <h1>Трекер привычек</h1>
+      <button id="themeToggle" class="icon-btn" title="Сменить тему">🌙</button>
+    </header>
+
+    <form id="addForm" class="add-form">
+      <input id="habitName" type="text" placeholder="Новая привычка (например, Спорт)" maxlength="40" required>
+      <div class="color-picker" id="colorPicker">
+        <span class="swatch" data-color="#6c5ce7" style="background:#6c5ce7"></span>
+        <span class="swatch" data-color="#00b894" style="background:#00b894"></span>
+        <span class="swatch" data-color="#e17055" style="background:#e17055"></span>
+        <span class="swatch" data-color="#0984e3" style="background:#0984e3"></span>
+        <span class="swatch" data-color="#e84393" style="background:#e84393"></span>
+      </div>
+      <button type="submit" class="primary-btn">Добавить</button>
+    </form>
+
+    <div id="habitList" class="habit-list"></div>
+
+    <p id="emptyState" class="empty-state">Пока нет привычек — добавьте первую выше.</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

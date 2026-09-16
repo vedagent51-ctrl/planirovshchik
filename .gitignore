@@ -1,0 +1,8 @@
+node_modules/
+windows/dist/
+android-app/android/app/build/
+android-app/android/build/
+android-app/android/.gradle/
+android-app/android/local.properties
+android-app/android/app/release/
+*.log
